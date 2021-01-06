@@ -1,2 +1,2 @@
 # portifolio
-meus conhecimentos/certificados
+meus conhecimentos e certificados
