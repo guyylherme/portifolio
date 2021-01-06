@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Guylherme Medeiros</title>
     <link rel="stylesheet" href="style.css">
@@ -15,15 +16,66 @@
             </ul>
         </div>
     </header>
-    <div class="main-portifolio">
-        <img src="imagem/contruçao.png" alt="">
-        <h1>Em construção...</h1>
+    <div class="portifolio">
+        <div class="row header">
+            <div class="col">
+                <h2 id="certificacao">Certificações</h2>
+            </div>
+            <div class="col" >
+                <h2 id="projetos">Projetos</h2>
+            </div>
+        </div>
+
+        <div class="row corpo">
+            <div class="col left">
+
+
+                <div class="cursoL">
+                    <img src="public/python.png" width="60px">
+                    <p>Python 3 - Introdução à nova versão da Linguagem</p>
+                    <label>Emição: Setembro de 2020</label><br>
+                    <a href="https://cursos.alura.com.br/certificate/49915990-d463-406a-8873-2ffbd503fdaf" target="_blank">Visualizar credencial</a>
+                </div>
+
+                <div class="cursoL">
+                    <img src="public/python.png" width="60px">
+                    <p>Python 3 - Avançando na Linguagem </p>
+                    <label>Emição: setembro de 2020</label><br>
+                    <a href="https://cursos.alura.com.br/certificate/49915990-d463-406a-8873-2ffbd503fdaf" target="_blank">Visualizar credencial</a>
+                </div>
+
+                <div class="cursoL">
+                    <img src="public/python.png" width="60px">
+                    <p>Python 3 - Fundamentos </p>
+                    <label>Emição: Janeiro de 2021</label><br>
+                    <a href="https://cursos.alura.com.br/certificate/49915990-d463-406a-8873-2ffbd503fdaf" target="_blank">Visualizar credencial</a>
+                </div>
+
+            </div>
+
+            <div class="col right">
+                
+            </div>
+        </div>
+
     </div>
 
     <!--Scripts-->
     <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script>
 
+        $('#certificacao').click(function(){
+            $('#certificacao').css({color: '#A5D8E6'})
+            $('#projetos').css({color: '#808080'})
+            $('#projetos').attr('disabled', true)
+            $('.header').css({marginTop: '10px'})
+            $('.corpo').css('display', 'block')
+        })
+
+        $('#projetos').click(function(){
+            alert('Função desabilitada no momento')
+        })
     </script>
 </body>
 </html>
