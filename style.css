@@ -1,0 +1,197 @@
+*{
+    background-color: #282a36;
+}
+
+/*-------------------*/
+
+/*Estilização do Index*/
+
+/*-------------------*/
+
+
+/*Cabeçalho*/
+header{
+    border-bottom: 1px solid #333;
+    background-color: #272933;
+}
+/*Menu Navegação*/
+.navbar{
+    width: 250px;
+    margin: auto;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-flex;
+}
+.navbar ul li a{
+    width: 100px;
+    padding: 0%;
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar ul li a:hover{
+    color:#A5D8E6;
+}
+/*Final do Menu*/
+
+/*Corpo da página*/
+.main-index{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+}
+/*Edição da Imagem*/
+.main-index img{
+    width: 15%;
+    margin: auto;
+    border-radius: 40% 10%;                        
+    border: 2px solid #A5D8E6;
+}
+.footer .linkedin img{
+    width: 30px;
+    border-radius: 0;
+    border: none;
+    float: left;
+    margin-left: 625px;
+    margin-top: 50px;
+}
+.footer .github img{
+    width: 30px;
+    border-radius: 0;
+    border: none;
+    float: right;
+    margin-right: 625px;
+    margin-top: 50px;
+}
+.footer img:hover{
+  
+    background: white;
+
+}
+/*Edição do H1*/
+.main-index h1{
+    font-size: 28pt;
+    line-height: 42px;
+    font-weight: bold;
+    color: #fff;
+}
+/*Edição do H2*/
+.main-index h2{
+    font-size: 18pt;
+    line-height: 40px;
+    font-weight: normal;
+    margin-top: -20px;
+    opacity: 0.5;
+    color: #fff;
+}
+/*Edição do paragrafo*/
+.main-index p{
+    font-size: 13pt;
+    line-height: 20px;
+    font-weight: normal;
+    margin-top: -15px;
+    opacity: 0.5;
+    color: #fff;
+}
+
+/*Efeitos teste de responsividade*/
+@media(max-width: 500px){
+    .main-index{
+        width: auto;
+        margin: auto;
+    }
+    header{
+        height: auto;
+    }
+    .main-index{
+        width: 250px;
+        font-size: 20px;
+        max-height: 40px;
+    }
+    .main-index img{
+        width: 40%;
+    }
+    .main-index h1{
+        font-size: 30px;
+    }
+    .main-index h2{
+        font-size: 20px;
+    }
+}
+
+
+/*-------------------*/
+
+/*Estilização do Portifolio*/
+
+/*-------------------*/
+
+/*Corpo da página*/
+.main-portifolio{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+}
+/*Edição da Imagem*/
+.main-portifolio img{
+    width: 15%;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10% 0%;                        
+    border: 2px solid #A5D8E6;
+}
+/*Edição do H1*/
+.main-portifolio h1{
+    font-size: 28pt;
+    line-height: 42px;
+    font-weight: bold;
+    color: #fff;
+}
+/*Edição do H2*/
+.main-portifolio h2{
+    font-size: 18pt;
+    line-height: 40px;
+    font-weight: normal;
+    margin-top: -20px;
+    opacity: 0.5;
+    color: #fff;
+}
+/*Edição do paragrafo*/
+.main-portifolio p{
+    font-size: 13pt;
+    line-height: 20px;
+    font-weight: normal;
+    margin-top: -15px;
+    opacity: 0.5;
+    color: #fff;
+}
+
+/*Efeitos teste de responsividade*/
+@media(max-width: 500px){
+    .main-portifolio{
+        margin: auto;
+    }
+    header{
+        height: auto;
+    }
+    .main-portifolio{
+        width: 250px;
+        font-size: 20px;
+        max-height: 40px;
+    }
+    .main-portifolio img{
+        width: 60%;
+    }
+    .main-portifolio h1{
+        font-size: 30px;
+    }
+    .main-portifolio h2{
+        font-size: 20px;
+    }
+}
